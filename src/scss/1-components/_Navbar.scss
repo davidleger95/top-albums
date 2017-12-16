@@ -1,0 +1,75 @@
+$bg: rgba(#000, 0.5);
+
+.Navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  background-color: $bg;
+  width: 80px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+
+  .menu {
+    list-style: none;
+    padding: 5px 0;
+    margin: 0;
+  }
+
+  .menuItem {
+    padding: 5px 10px;
+    position: relative;
+  }
+
+  .albumArt {
+    width: 60px;
+    transition: width 100ms ease-in-out;
+  }
+
+  .label {
+    position: absolute;
+    color: #fff;
+    text-decoration: none;
+    left: calc(100% + 2px);
+    top: calc(50% - 1em);
+    white-space: nowrap;
+    background-color: #333;
+    padding: 0.5em;
+    box-sizing: border-box;
+    z-index: -1;
+    &:before {
+      content: '';
+      display: block;
+      background-color: inherit;
+      width: 10px;
+      height: 10px;
+      position: absolute;
+      top: 0.75em;
+      left: -5px;
+      z-index: -1;
+      transform: rotateZ(45deg);
+    }
+    transform: scale(0);
+    transform-origin: left;
+    opacity: 0;
+    transition: transform 200ms ease-in-out, opacity 100ms ease-in-out;
+
+  }
+  .link {
+    perspective: 500px;
+  }
+  .link:hover {
+    > * {
+      box-shadow: 0 0 10px rgba(black, 0.5);
+    }
+    .albumArt {
+      width: 75px;
+    }
+    .label {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+}

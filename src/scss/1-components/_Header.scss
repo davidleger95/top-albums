@@ -1,0 +1,39 @@
+.Header {
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+
+  .headerWrapper {
+    position: relative;
+  }
+
+  .block {
+    position: absolute;
+    left: -10px;
+    top: -10px;
+    bottom: -10px;
+    background-color: black;
+    width: 50px;
+  }
+
+  .content {
+    position: relative;
+    border: 1px solid;
+    padding: 1em;
+    margin: 0;
+    background-color: white;
+    font-size: 1.5em;
+    font-style: italic;
+  }
+  
+  .arrow {
+    position: absolute;
+    bottom: -1.5em;
+    right: 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 1em;
+    border-radius: 0;
+  }
+}

@@ -1,0 +1,37 @@
+.Title {
+  display: inline-block;
+  position: relative;
+  margin-top: 5em;
+  margin-left: 5em;
+  margin-bottom: 5em;
+  z-index: 10;
+
+  .albumTitle {
+    display: inline-block;
+    font-size: 2em;
+    padding: 0.5em 0.5em 0.75em 0.5em;
+    margin: 0;
+  }
+
+  .artist {
+    position: absolute;
+    //left: 2em;
+    right: 1em;
+    bottom: -1.5em;
+    display: flex;
+    align-items: center;
+    border: 1px solid;
+    text-align: right;
+    padding: 0.1em 0.5em 0.1em 0.25em;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: visible;
+
+  }
+  .Icon {
+    height: 1em;
+    width: 1em;
+    margin-right: 0.25em;
+  }
+}
