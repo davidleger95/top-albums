@@ -1,4 +1,4 @@
-$bg: rgba(#000, 0.5);
+$bg: rgba(#222, 0.5);
 
 .Navbar {
   position: fixed;
@@ -11,6 +11,7 @@ $bg: rgba(#000, 0.5);
   height: 100vh;
   display: flex;
   align-items: center;
+  z-index: 1000;
 
   .menu {
     list-style: none;

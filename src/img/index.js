@@ -8,6 +8,7 @@ import SturmUndDrang from './sturm-und-drang.jpg';
 import TroubleWillFindMe from './trouble-will-find-me.jpg';
 import ThatsTheSpirit from './thats-the-spirit.jpg';
 import xInfinity from './x-infinity.jpg';
+import Aventine from './aventine.jpg';
 
 import Nightwish from './nightwish.jpg';
 import Lights from './lights.jpg';
@@ -22,7 +23,8 @@ export const CoverArt = {
   SturmUndDrang,
   TroubleWillFindMe,
   ThatsTheSpirit,
-  xInfinity
+  xInfinity,
+  Aventine
 };
 
 export const BackgroundImages = {
