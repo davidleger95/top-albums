@@ -11,8 +11,8 @@ export default class CoverSection extends Component {
 
   componentDidMount() {
     setInterval(() => this.setState({
-      flipped: this.getRandomNumbers(4, 0, this.props.albums.length)
-    }), 5000);
+      flipped: this.getRandomNumbers(Math.floor(this.props.albums.length / 5), 0, this.props.albums.length)
+    }), 3500);
   }
   render() {
     console.log(this.state.flipped);
@@ -25,10 +25,10 @@ export default class CoverSection extends Component {
 
     return (
       <header className="CoverSection">
-        {/*<h1 className="title">Music I Listen To</h1>
-        <h2 className="subtitle">David Leger</h2>*/}
-        <div className="mosaic">
-          {tiles}
+        <div className="mosaic">{tiles}</div>
+        <div className="titleWrapper">
+          <h1 className="title">Music I Listen To</h1>
+          <h2 className="subtitle">David Leger</h2>
         </div>
       </header>
     )

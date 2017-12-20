@@ -7,9 +7,35 @@
   }
 }
 .CoverSection {
-  display: block;
-  background: pink;
+  display: flex;
   height: 100vh;
+
+  .titleWrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    flex-direction: column;
+    background: rgba(white, 0.25);
+
+    .title {
+      font-size: 4em;
+      padding: 0.5em;
+      margin: 0;
+      background: black;
+      color: white;
+      box-shadow: 0 0 200px white;
+    }
+    .subtitle {
+      margin: -1em;
+      text-align: right;
+      background: white;
+      color: black;
+      padding: 0.25em 0.5em;
+      text-transform: uppercase;
+    }
+  }
 
   .mosaic {
     position: absolute;
@@ -27,7 +53,7 @@
   .tile {
     display: inline-block;
     flex-grow: 1;
-    width: 20%;
+    width: 10%;
 
     img, .backside {
       height: 100%;
@@ -43,8 +69,6 @@
       top: 0;
       left: 0;
       display: block;
-      //transform: rotateY(180deg);
-      //z-index: -1;
     }
 
     &.flipped {

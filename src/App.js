@@ -4,6 +4,7 @@ import CoverSection from './components/CoverSection';
 import Navbar from './components/Navbar';
 import Album from './components/Album';
 
+const shuffleArray = arr => arr.sort(() => Math.random() - 0.5)
 
 class App extends Component {
 
@@ -11,7 +12,7 @@ class App extends Component {
     return (
       <div className="App">
         <Navbar />
-        <CoverSection albums={[...albums, ...albums]} />
+        <CoverSection albums={shuffleArray([...albums, ...albums, ...albums, ...albums, ...albums])} />
         {albums.map(albumData => <Album key={albumData.id} {...albumData} />)}
       </div>
     );

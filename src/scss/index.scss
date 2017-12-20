@@ -1,11 +1,11 @@
 $SkinAndEarth-1: #E85455;
 $SkinAndEarth-2: #ECC6B3;
 
-body {
+html, body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  // background-color: $SkinAndEarth-2;
+  background-color: black;
 }
 
 @import "App";
