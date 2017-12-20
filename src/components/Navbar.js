@@ -29,16 +29,12 @@ export default class Navbar extends Component {
     const { scrollY } = this.state;
     let offset
     if (scrollY <= 0) {
-      offset = -100;
+      offset = 100;
     } else if (scrollY >= 1) {
       offset = 0;
     } else {
       offset = 100 - scrollY * 100;
     }
-
-    console.log(offset);
-
-
 
     return (
       <nav className="Navbar" style={{ transform: `translateX(-${offset}%)` }}>

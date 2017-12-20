@@ -19,13 +19,17 @@
     flex-direction: column;
     background: rgba(white, 0.25);
 
+    @media(max-width:  400px) {
+      font-size: 0.5em;
+    }
+
     .title {
       font-size: 4em;
       padding: 0.5em;
       margin: 0;
       background: black;
       color: white;
-      box-shadow: 0 0 200px white;
+      box-shadow: 0 0 5em white;
     }
     .subtitle {
       margin: -1em;
@@ -34,6 +38,13 @@
       color: black;
       padding: 0.25em 0.5em;
       text-transform: uppercase;
+    }
+
+    @media(max-width:  600px) {
+      font-size: 0.6em;
+      .subtitle {
+        font-size: 2em;
+      }
     }
   }
 
@@ -54,6 +65,10 @@
     display: inline-block;
     flex-grow: 1;
     width: 10%;
+    @media(max-width: 1400px) { width: 12.5%; }
+    @media(max-width: 1200px) { width: 20%; }
+    @media(max-width:  800px) { width: 25%; }
+    @media(max-width:  400px) { width: 50%; }
 
     img, .backside {
       height: 100%;

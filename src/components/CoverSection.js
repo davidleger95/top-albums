@@ -10,14 +10,18 @@ export default class CoverSection extends Component {
   }
 
   componentDidMount() {
-    setInterval(() => this.setState({
+    this.interval = setInterval(() => this.setState({
       flipped: this.getRandomNumbers(Math.floor(this.props.albums.length / 5), 0, this.props.albums.length)
     }), 3500);
   }
+
+  componentWillUnmount() {
+    clearInterval(this.interval);
+  }
+
   render() {
-    console.log(this.state.flipped);
     const tiles = this.props.albums.map(({ coverUrl, colors }, i) => (
-      <div key={i} className={`tile ${this.state.flipped.includes(i) ? 'flipped' : null}`} style={{ backgroundColor: colors.primary }}>
+      <div key={i} className={`tile ${this.state.flipped.includes(i) ? 'flipped' : ''}`} style={{ backgroundColor: colors.primary }}>
         <img src={coverUrl} alt="" />
         <div className="backside" />
       </div>
