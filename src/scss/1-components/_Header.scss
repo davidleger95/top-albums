@@ -3,6 +3,14 @@
   display: flex;
   align-items: center;
 
+  @media(max-width: 840px) {
+    justify-content: center;
+  }
+
+  @media(max-width: 600px) {
+    font-size: 0.8em;
+  }
+
   .headerWrapper {
     position: relative;
   }
@@ -19,21 +27,21 @@
   .content {
     position: relative;
     border: 1px solid;
-    padding: 1em;
+    padding: 1.5em 1em;
     margin: 0;
     background-color: white;
     font-size: 1.5em;
     font-style: italic;
   }
-  
+
   .arrow {
     position: absolute;
-    bottom: -1.5em;
+    bottom: -1em;
     right: 20px;
     background-color: black;
     color: white;
     border: none;
-    padding: 1em;
+    padding: 0.5em;
     border-radius: 0;
   }
 }

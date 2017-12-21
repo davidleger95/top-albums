@@ -3,6 +3,10 @@
   position: relative;
   padding-left: 80px;
 
+  @media(max-width: 500px) {
+    padding-left: 0;
+  }
+
   .imageWrapper {
     overflow: hidden;
     position: absolute;

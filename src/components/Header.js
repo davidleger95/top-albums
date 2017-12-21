@@ -9,9 +9,9 @@ export default function Header({ lyrics = {}, colors }) {
           className="content"
           style={{ backgroundColor: colors.secondary, borderColor: colors.primary }}
           dangerouslySetInnerHTML={{ __html: lyrics.content }}></p>
-        <button className="arrow" style={{ backgroundColor: colors.primary, color: colors.secondary }}>
+        <div className="arrow" style={{ backgroundColor: colors.primary, color: colors.secondary }}>
           {lyrics.song}
-        </button>
+        </div>
       </div>
     </header>
   )
