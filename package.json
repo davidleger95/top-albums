@@ -1,6 +1,6 @@
 {
   "name": "top-albums",
-  "homepage": "https://davidleger95.github.io/top-albums",
+  "homepage": "http://music.davidleger.me",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

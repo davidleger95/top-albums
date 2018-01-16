@@ -7,6 +7,7 @@ const albums = [
     artist: 'Agnes Obel',
     coverUrl: CoverArt.Aventine,
     bgUrl: 'https://i.ytimg.com/vi/dw_Kk7M59SA/maxresdefault.jpg',
+    imgCaption: 'piasrecordings / YouTube',
     albumUrl: 'https://open.spotify.com/embed/album/0T6V4pt9LwYgrYTEQrjISP',
     lyrics: {
       content: `
@@ -51,6 +52,7 @@ const albums = [
     title: 'Come Over When You\'re Sober, Pt. 1',
     artist: 'Lil Peep',
     bgUrl: 'http://the-flow.ru/uploads/images/resize/830x0/adaptiveResize/05/87/31/94/29/8ebfd9040cd7.png',
+    imgCaption: 'Eric T. White / Paper Magazine',
     coverUrl: 'http://images.genius.com/5ebed3bf6f5790bdceb1130ca93fbd1d.939x939x1.jpg',
     albumUrl: 'https://open.spotify.com/embed/album/33TJ52PuwenGmysJrwMGCe',
     thoughts: `
@@ -89,6 +91,7 @@ const albums = [
     id: 'how-i-learned',
     title: 'How I Learned To Stop Giving A Shit And Love Mindless Self Indulgence',
     artist: 'Mindless Self Indulgence',
+    imgCaption: 'Mindless Self Indulgence / altpress.com',
     coverUrl: 'https://pp.userapi.com/c412328/v412328889/3bb3/iPMEe1HgzqA.jpg',
     bgUrl: 'https://www.altpress.com/images/made/chrootimages/uploads/feature_header_images/mindlessselfindulgence620x400_633_461_70_s_c1.jpg',
     albumUrl: 'https://open.spotify.com/embed/album/6LaVH1njSyg2fzS1MucTg7',
@@ -133,6 +136,7 @@ const albums = [
     artist: 'Nightwish',
     coverUrl: CoverArt.Imaginaerum,
     bgUrl: BackgroundImages.Nightwish,
+    imgCaption: 'Nightwish / nightwish.com',
     albumUrl: 'https://open.spotify.com/embed/album/1yssEiclrpPwxfzpMyHaHb',
     thoughts: `
       <p>
@@ -189,6 +193,7 @@ const albums = [
     id: 'into-your-lungs',
     title: 'Into Your Lungs (and around in your heart and on through your blood)',
     artist: 'Hey Rosetta!',
+    imgCaption: 'Hey Rosetta! / heyrosetta.com',
     bgUrl: 'http://www.heyrosetta.com/images/open-graph.jpg',
     coverUrl: CoverArt.IntoYourLungs,
     albumUrl: 'https://open.spotify.com/embed/album/3HX991kFppdRlBvKAmejt4',
@@ -231,6 +236,7 @@ const albums = [
     id: 'mothership',
     title: 'Mothership',
     artist: 'Dance Gavin Dance',
+    imgCaption: 'Dance Gavin Dance / brokeassstuart.com',
     bgUrl: 'http://brokeassstuart.com/wp-content/pictsnShit/2017/02/14141995_1160654840657313_2221211444340838659_n.jpg',
     coverUrl: CoverArt.Mothership,
     albumUrl: 'https://open.spotify.com/embed/album/1FSVYIieMIpJCWjucTjrao',
@@ -277,6 +283,7 @@ const albums = [
     id: 'run-the-jewels-3',
     title: 'Run The Jewels 3',
     artist: 'Run The Jewels',
+    imgCaption: 'Run The Jewels / Wikipedia',
     coverUrl: 'https://upload.wikimedia.org/wikipedia/en/9/96/RunTheJewels3.jpg',
     bgUrl: 'https://www.fuse.tv/image/51b62280cfa61e8077000029/816/545/run-the-jewels-killer-mike-elp.jpg',
     albumUrl: 'https://open.spotify.com/embed/album/3v2GjFB9V5kHgrOCXn3sI9',
@@ -322,7 +329,8 @@ const albums = [
     title: 'Skin & Earth',
     artist: 'Lights',
     coverUrl: CoverArt.SkinAndEarth,
-    bgUrl: BackgroundImages.Lights,
+    imgCaption: 'Matt Barnes / cbc.ca',
+    bgUrl: 'https://i.cbc.ca/1.4296690.1505836343!/fileImage/httpImage/image.jpg_gen/derivatives/16x9_940/lights.jpg',
     albumUrl: 'https://open.spotify.com/embed/album/6s7WpIWoAG0LiBzQuuPh9o',
     thoughts: `
       <p>
@@ -368,6 +376,7 @@ const albums = [
     id: 'sturm-und-drang',
     title: 'VII: Sturm Und Drang',
     artist: 'Lamb of God',
+    imgCaption: 'Lamb of God / etalinjection.com',
     bgUrl: 'http://www.metalinjection.net/wp-content/uploads/2014/12/Lamb-Of-God-new-album-2015.jpg',
     coverUrl: CoverArt.SturmUndDrang,
     albumUrl: 'https://open.spotify.com/embed/album/01Lg3FKNxZ0We36Exz8Q9V',
@@ -416,6 +425,7 @@ const albums = [
     id: 'thats-the-spirit',
     title: 'That\'s the Spirit',
     artist: 'Bring Me The Horizon',
+    imgCaption: 'Bring Me The Horizon / Epitaph Records',
     bgUrl: 'http://epitaph.com/media/artists/BringMeTheHorizon_MegaImage_D9gUvdy.jpg.1200x630_q90_crop.jpg',
     coverUrl: CoverArt.ThatsTheSpirit,
     albumUrl: 'https://open.spotify.com/embed/album/7FqHuAvmREiIwVXVpZ9ooP',
@@ -459,7 +469,8 @@ const albums = [
     id: 'trouble-will-find-me',
     title: 'Trouble Will Find Me',
     artist: 'The National',
-    bgUrl: 'http://2.bp.blogspot.com/-oFLG26c4Lqs/UwGTh9p2_fI/AAAAAAAAKs0/70e3YTbQtHQ/s1600/the-nationallead.jpg',
+    imgCaption: 'The National / blog.ticketmaster.co.uk',
+    bgUrl: 'https://blog.ticketmaster.co.uk/wp-content/uploads/2013/11/the-nationallead-1.jpg',
     coverUrl: CoverArt.TroubleWillFindMe,
     albumUrl: 'https://open.spotify.com/embed/album/2JhR4tjuc3MIKa8v2JaKze',
     thoughts: `
@@ -503,6 +514,7 @@ const albums = [
     id: 'two-parts-viper',
     title: 'Two Parts Viper',
     artist: '`68',
+    imgCaption: '`68 / metalnexus.net',
     bgUrl: 'http://metalnexus.net/wp-content/uploads/2017/08/1458634_207950419388109_514796493_n.jpg',
     coverUrl: CoverArt.TwoPartsViper,
     albumUrl: 'https://open.spotify.com/embed/album/5fLNoR3OoIbiNhYlkqxcDD',

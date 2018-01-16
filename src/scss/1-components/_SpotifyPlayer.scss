@@ -1,10 +1,13 @@
 .SpotifyPlayer {
   display: flex;
   flex-direction: column;
-  min-width: 300px;
   box-shadow: 0 0 40px 5px rgba(black, 0.20);
   flex-grow: 1;
   margin-bottom: 5em;
+
+  @media(min-width: 340px) {
+    min-width: 300px;
+  }
 
   .albumArt {
     flex-grow: 1;

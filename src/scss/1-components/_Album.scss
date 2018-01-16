@@ -29,6 +29,31 @@
     right: -100%;
   }
 
+  .caption {
+    position: absolute;
+    font-style: italic;
+    top: 1em;
+    right: 1em;
+    color: #fff;
+    text-shadow: 1px 1px 2px black;
+    font-size: 0.7em;
+    opacity: 0.75;
+  }
+
+  @media(max-width: 500px) {
+    .imageWrapper {
+      left: 0;
+    }
+
+    .backgroundImage {
+      width: 100vw;
+    }
+
+    .imageOverlay {
+      display: none;
+    }
+  }
+
   .container {
     position: relative;
     display: flex;
