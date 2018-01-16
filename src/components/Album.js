@@ -5,7 +5,7 @@ import Header from './Header';
 
 const hexToRGB = hex => hex.substring(1).match(/.{1,2}/g).map(x => parseInt(x, 16)).toString();
 
-export default function Album({ id, title, lyrics, artist, bgUrl, coverUrl, albumUrl, colors }) {
+export default function Album({ id, title, lyrics, artist, bgUrl, coverUrl, albumUrl, colors, thoughts }) {
   return (
     <section id={id} className="Album" style={{ backgroundColor: colors.secondary }}>
       <Title albumTitle={title} artist={artist} colors={colors} />
@@ -23,18 +23,7 @@ export default function Album({ id, title, lyrics, artist, bgUrl, coverUrl, albu
         />
         <main className="body" style={{ color: colors.text }}>
           <Header colors={colors} lyrics={lyrics} />
-          <p>
-            Nullam id dolor id nibh ultricies vehicula ut id elit. Nullam quis
-            risus eget urna mollis ornare vel eu leo. Vestibulum id ligula porta
-            felis euismod semper. Fusce dapibus, tellus ac cursus commodo,
-            tortor mauris condimentum nibh, ut fermentum massa justo sit amet
-            risus. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-          </p>
-          <p>
-            Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id
-            nibh ultricies vehicula ut id elit. Sed posuere consectetur est at
-            lobortis. Nullam id dolor id nibh ultricies vehicula ut id elit.
-          </p>
+          <div dangerouslySetInnerHTML={{ __html: thoughts }}></div>
         </main>
       </div>
     </section>
